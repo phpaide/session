@@ -1,0 +1,30 @@
+{
+	"name": "phpaide/session",
+	"description": "Simple session handling framework",
+	"license": "GPL-3.0-only",
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "git@github.com:phpaide/user.git"
+		}
+	],
+	"require": {
+		"composer/installers": "~1.0",
+		"sabre/http" : "~5.0.0",
+		"phpaide/user": "dev-master"
+	},
+	"autoload": {
+		"psr-4": {
+			"PHPAide\\Session\\": "src/"
+		}
+	},
+	"require-dev": {
+		"jakub-onderka/php-parallel-lint": "1.0.0",
+		"jakub-onderka/php-console-highlighter": "0.3.2"
+	},
+	"scripts": {
+		"test": [
+			"parallel-lint . --exclude vendor"
+		]
+	}
+}
