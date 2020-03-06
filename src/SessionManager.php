@@ -65,7 +65,7 @@ class SessionManager {
 	}
 
 	private function getSessionIDFromRequest( Request $request ): ?string {
-
+		return null;
 	}
 
 	private function validSessionID( ?string $sessionID ): bool {
